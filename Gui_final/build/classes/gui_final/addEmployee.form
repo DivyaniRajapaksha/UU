@@ -154,6 +154,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="485" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="136" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="eId" min="-2" pref="207" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -164,10 +166,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="129" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jLabel1" min="-2" pref="129" max="-2" attributes="0"/>
+                      <Component id="eId" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="17" max="32767" attributes="0"/>
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -205,15 +209,10 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="sal" min="-2" pref="207" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="eId" alignment="1" min="-2" pref="207" max="-2" attributes="0"/>
-                                  <Component id="name" alignment="1" min="-2" pref="207" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="po" min="-2" pref="207" max="-2" attributes="0"/>
-                              <Component id="add" min="-2" pref="207" max="-2" attributes="0"/>
-                              <Component id="em" min="-2" pref="207" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="name" min="-2" pref="207" max="-2" attributes="0"/>
+                          <Component id="po" min="-2" pref="207" max="-2" attributes="0"/>
+                          <Component id="add" min="-2" pref="207" max="-2" attributes="0"/>
+                          <Component id="em" min="-2" pref="207" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="dob" min="-2" pref="207" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="321" max="-2" attributes="0"/>
@@ -239,10 +238,7 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel6" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="eId" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabel6" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel2" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
@@ -324,8 +320,6 @@
                 <Property name="text" type="java.lang.String" value="Employee ID"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="eId">
-            </Component>
             <Component class="javax.swing.JTextField" name="name">
             </Component>
             <Component class="javax.swing.JTextField" name="add">
@@ -399,11 +393,8 @@
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel1">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="F:\Projects\Gui_final\src\gui_final\chef.png"/>
-            </Property>
-          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="eId">
         </Component>
       </SubComponents>
     </Container>
