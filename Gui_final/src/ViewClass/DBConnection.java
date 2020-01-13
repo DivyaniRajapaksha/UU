@@ -157,7 +157,7 @@ public class DBConnection {
                      preparedStmt.setDate(2, startDate);
                      preparedStmt.setTime  (3, time);
                      preparedStmt.setDouble(4, o1.getTotPrice());
-                     preparedStmt.setString(5, "C001");
+                     preparedStmt.setString(5, "1");
                       preparedStmt.execute();
             Iterator itr=al.iterator();  
             while(itr.hasNext()){ 

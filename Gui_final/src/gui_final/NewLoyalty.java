@@ -9,6 +9,7 @@ import ViewClass.DBConnection;
 import ViewClass.loyalty;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 /**
@@ -235,8 +236,7 @@ public class NewLoyalty extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField14ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         orderAlert s=new orderAlert();
-        s.setVisible(true);
+         
         
         String fname=jTextField12.getText();
         String lname=jTextField14.getText();
@@ -244,18 +244,23 @@ public class NewLoyalty extends javax.swing.JFrame {
         String mobile=jTextField16.getText(); 
         int no = Integer.valueOf(mobile);
         String password=jTextField15.getText(); 
+        if(password.equalsIgnoreCase(jTextField17.getText())){
+            loyalty ob= new loyalty(fname,lname,mail,no,password);
+            DBConnection db=new DBConnection();
         
-        loyalty ob= new loyalty(fname,lname,mail,no,password);
-        DBConnection db=new DBConnection();
-        
-        try {
+            try {
             db.insertloycus(ob);
-        } catch (Exception ex) {
+            } catch (Exception ex) {
             Logger.getLogger(NewLoyalty.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        loyaltyadminview a = new loyaltyadminview();
-        a.setVisible(true);
+             }
+            orderAlert s=new orderAlert();
+             s.setVisible(true);
+       }
+        else{
+             JOptionPane.showMessageDialog(rootPane, "Password does not match!!");
+            }
+        //loyaltyadminview a = new loyaltyadminview();
+        //a.setVisible(true);
            
     }//GEN-LAST:event_jButton1ActionPerformed
 
