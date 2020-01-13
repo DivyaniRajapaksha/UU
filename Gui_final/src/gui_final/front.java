@@ -19,7 +19,7 @@ public class front extends javax.swing.JFrame {
     public front() {
         initComponents();
         setAlwaysOnTop(true);
-        //setResizable(false);
+        setResizable(false);
         setVisible(true);
         Toolkit tk=Toolkit.getDefaultToolkit();
         
@@ -51,12 +51,16 @@ public class front extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         feedback = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Menu");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(290, 320, 100, 40);
 
         menu.setBackground(new java.awt.Color(0, 51, 51));
         menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/menu.png"))); // NOI18N
@@ -65,6 +69,8 @@ public class front extends javax.swing.JFrame {
                 menuActionPerformed(evt);
             }
         });
+        getContentPane().add(menu);
+        menu.setBounds(220, 370, 230, 220);
 
         jButton1.setBackground(new java.awt.Color(0, 51, 51));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/shopping-cart.png"))); // NOI18N
@@ -73,14 +79,20 @@ public class front extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(700, 370, 240, 220);
 
-        jLabel3.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Cart");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(800, 320, 77, 44);
 
-        jLabel4.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Rate Us");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(1290, 310, 141, 44);
 
         chef.setBackground(new java.awt.Color(0, 51, 51));
         chef.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/chef.png"))); // NOI18N
@@ -89,10 +101,14 @@ public class front extends javax.swing.JFrame {
                 chefActionPerformed(evt);
             }
         });
+        getContentPane().add(chef);
+        chef.setBounds(1250, 360, 240, 230);
 
-        jLabel6.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("About");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(1350, 700, 108, 44);
 
         contact.setBackground(new java.awt.Color(0, 51, 51));
         contact.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/phone.png"))); // NOI18N
@@ -101,6 +117,8 @@ public class front extends javax.swing.JFrame {
                 contactActionPerformed(evt);
             }
         });
+        getContentPane().add(contact);
+        contact.setBounds(1260, 750, 250, 220);
 
         about.setBackground(new java.awt.Color(0, 51, 51));
         about.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/admin.png"))); // NOI18N
@@ -109,10 +127,14 @@ public class front extends javax.swing.JFrame {
                 aboutActionPerformed(evt);
             }
         });
+        getContentPane().add(about);
+        about.setBounds(690, 750, 260, 220);
 
-        jLabel7.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Contact");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(790, 690, 140, 44);
 
         feedback.setBackground(new java.awt.Color(0, 51, 51));
         feedback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rating.png"))); // NOI18N
@@ -121,84 +143,19 @@ public class front extends javax.swing.JFrame {
                 feedbackActionPerformed(evt);
             }
         });
+        getContentPane().add(feedback);
+        feedback.setBounds(221, 751, 220, 220);
 
-        jLabel5.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Feedback");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(240, 680, 200, 50);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(178, 178, 178)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(jLabel2)
-                        .addGap(444, 444, 444)
-                        .addComponent(jLabel3)
-                        .addGap(448, 448, 448)
-                        .addComponent(jLabel4))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(250, 250, 250)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(300, 300, 300)
-                        .addComponent(chef, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(jLabel5)
-                        .addGap(417, 417, 417)
-                        .addComponent(jLabel7)
-                        .addGap(484, 484, 484)
-                        .addComponent(jLabel6))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(feedback, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(249, 249, 249)
-                        .addComponent(about, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(310, 310, 310)
-                        .addComponent(contact, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(452, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(117, 117, 117)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))))
-                .addGap(11, 11, 11)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(chef, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(100, 100, 100)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel5))
-                    .addComponent(jLabel7)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel6)))
-                .addGap(11, 11, 11)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(feedback, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(about, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(contact, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(302, Short.MAX_VALUE))
-        );
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/food-1932466_1920.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-9, 5, 1950, 1070);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -287,6 +244,7 @@ public class front extends javax.swing.JFrame {
     private javax.swing.JButton contact;
     private javax.swing.JButton feedback;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
