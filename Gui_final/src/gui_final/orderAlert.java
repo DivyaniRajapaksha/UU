@@ -102,8 +102,8 @@ public class orderAlert extends javax.swing.JFrame {
        RatingForm s=new RatingForm();
        s.setVisible(true);
        
-       CartGUI s1=new CartGUI();
-       s1.dispose();
+       //CartGUI s1=new CartGUI();
+       //s1.dispose();
        
        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
