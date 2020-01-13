@@ -244,7 +244,7 @@ public class adminSett extends javax.swing.JFrame {
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/feedback (1).png"))); // NOI18N
-        jButton6.setText("Feedback");
+        jButton6.setText("  Feedback");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -290,9 +290,9 @@ public class adminSett extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(30, 30, 30)
                                 .addComponent(jButton3)
-                                .addGap(46, 46, 46)
+                                .addGap(36, 36, 36)
                                 .addComponent(jButton4)
-                                .addGap(29, 29, 29)
+                                .addGap(39, 39, 39)
                                 .addComponent(jButton6)))
                         .addGap(38, 38, 38)
                         .addComponent(jButton5)
@@ -368,10 +368,6 @@ public class adminSett extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         addEmployee e=new  addEmployee();
         e.setVisible(true);
@@ -381,6 +377,10 @@ public class adminSett extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
