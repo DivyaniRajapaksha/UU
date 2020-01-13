@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
  * @author Ruvini
  */
 public class CartGUI extends javax.swing.JFrame {
-    static int oId=0;
+    static int oId=16;
     private static ArrayList<FoodOrder> al1=new ArrayList<FoodOrder>();
     static double total=0;
     /**
