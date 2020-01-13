@@ -20,7 +20,7 @@ public class Chef extends javax.swing.JFrame {
         initComponents();
         jTextPane1();
         setAlwaysOnTop(true);
-        setResizable(false);
+        //setResizable(false);
         setVisible(true);
         Toolkit tk=Toolkit.getDefaultToolkit();
         
