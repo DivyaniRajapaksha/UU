@@ -333,20 +333,26 @@ public class addFood extends javax.swing.JFrame {
         String[] cId=value.split("-");
         int cId1=Integer.valueOf(cId[0]);
         System.out.print(cId[0]);
-        
-        FoodItem ob= new FoodItem(fid,name1,des,price2,cId1, fis);
-        System.out.println(fis);
-        DBConnection db=new DBConnection();
-        
-        try {
-            db.insertData(ob);
-            db.addImage(ob,image );
-        } catch (Exception ex) {
-            Logger.getLogger(addFood.class.getName()).log(Level.SEVERE, null, ex);
-            JOptionPane.showMessageDialog(rootPane, "Enter unique value for Food ID");
+       if(name.equals("")||inumber.equals("")||price.equals("")||details.equals("")){
+                JOptionPane.showMessageDialog(rootPane, "Empty Fields are not allowed!!");
         }
+       else{  
+            FoodItem ob= new FoodItem(fid,name1,des,price2,cId1, fis);
+            System.out.println(fis);
+            DBConnection db=new DBConnection();
         
-        
+            try {
+                db.insertData(ob);
+                db.addImage(ob,image );
+            } catch (Exception ex) {
+                Logger.getLogger(addFood.class.getName()).log(Level.SEVERE, null, ex);
+                JOptionPane.showMessageDialog(rootPane, "Enter unique value for Food ID");
+             }
+            name.setText(" ");
+            inumber.setText(" ");
+            price.setText(" ");
+            details.setText(" ");
+       }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnImageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImageActionPerformed
