@@ -245,16 +245,20 @@ public class NewLoyalty extends javax.swing.JFrame {
         int no = Integer.valueOf(mobile);
         String password=jTextField15.getText(); 
         if(password.equalsIgnoreCase(jTextField17.getText())){
-            loyalty ob= new loyalty(fname,lname,mail,no,password);
-            DBConnection db=new DBConnection();
+            if(fname.equals("")|lname.equalsIgnoreCase("")|mail.equalsIgnoreCase("")|mobile.equalsIgnoreCase("")){
+                JOptionPane.showMessageDialog(rootPane, "Empty Fields are not allowed!!");
+            }else{
+                loyalty ob= new loyalty(fname,lname,mail,no,password);
+                 DBConnection db=new DBConnection();
         
-            try {
+                try {
             db.insertloycus(ob);
             } catch (Exception ex) {
             Logger.getLogger(NewLoyalty.class.getName()).log(Level.SEVERE, null, ex);
              }
             orderAlert s=new orderAlert();
              s.setVisible(true);
+            }
        }
         else{
              JOptionPane.showMessageDialog(rootPane, "Password does not match!!");
