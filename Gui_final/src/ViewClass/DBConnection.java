@@ -16,6 +16,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Iterator;
 
 /**
@@ -145,13 +146,19 @@ public class DBConnection {
      public void addOrder(ArrayList<FoodOrder> al,Order o1) throws Exception{
           Connection c=getDBConnection();
            Statement stmt=c.createStatement();
-           DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-           String time=dtf.format(o1.getTime());
-           String date=dtf.format(o1.getDate());
-           System.out.println(date);
-           System.out.println(time);
-            String sql="insert into order (oId,date,time,totPrice,cusId) values ('"+o1.getoId()+"','"+date+"','"+time+"','"+o1.getTotPrice()+"','"+o1.getcId()+"')";
-             stmt.executeUpdate(sql);
+              Calendar calendar = Calendar.getInstance();
+               java.sql.Date startDate = new java.sql.Date(calendar.getTime().getTime());
+               java.sql.Time time=new java.sql.Time(calendar.getTime().getTime());
+               System.out.println(startDate);
+               System.out.println(time);
+            String sql="insert into foodordering.order (oId,date,time,totPrice,cusId) values (?,?,?,?,?);";
+              PreparedStatement preparedStmt = c.prepareStatement(sql);
+                     preparedStmt.setInt(1, o1.getoId());
+                     preparedStmt.setDate(2, startDate);
+                     preparedStmt.setTime  (3, time);
+                     preparedStmt.setDouble(4, o1.getTotPrice());
+                     preparedStmt.setString(5, "C001");
+                      preparedStmt.execute();
             Iterator itr=al.iterator();  
             while(itr.hasNext()){ 
                  FoodOrder c2=(FoodOrder)itr.next();  
