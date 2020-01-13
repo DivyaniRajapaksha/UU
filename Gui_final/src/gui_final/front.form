@@ -28,7 +28,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Mongolian Baiti" size="24" style="0"/>
+          <Font name="Tahoma" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -37,7 +37,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="290" y="320" width="100" height="40"/>
+=======
           <AbsoluteConstraints x="180" y="210" width="-1" height="-1"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
@@ -63,7 +67,11 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="220" y="370" width="230" height="220"/>
+=======
           <AbsoluteConstraints x="150" y="260" width="120" height="110"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
@@ -86,14 +94,18 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="700" y="370" width="240" height="220"/>
+=======
           <AbsoluteConstraints x="400" y="260" width="110" height="110"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Mongolian Baiti" size="24" style="0"/>
+          <Font name="Tahoma" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -102,14 +114,18 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="800" y="320" width="-1" height="-1"/>
+=======
           <AbsoluteConstraints x="430" y="200" width="-1" height="-1"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Mongolian Baiti" size="24" style="0"/>
+          <Font name="Tahoma" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -118,7 +134,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="1290" y="310" width="-1" height="-1"/>
+=======
           <AbsoluteConstraints x="690" y="200" width="-1" height="-1"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
@@ -141,14 +161,18 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="1250" y="360" width="240" height="230"/>
+=======
           <AbsoluteConstraints x="680" y="260" width="110" height="110"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Mongolian Baiti" size="24" style="0"/>
+          <Font name="Tahoma" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -157,7 +181,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="1350" y="700" width="-1" height="-1"/>
+=======
           <AbsoluteConstraints x="700" y="440" width="-1" height="-1"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
@@ -180,7 +208,11 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="1260" y="750" width="250" height="220"/>
+=======
           <AbsoluteConstraints x="680" y="510" width="120" height="120"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
@@ -203,14 +235,18 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="690" y="750" width="260" height="220"/>
+=======
           <AbsoluteConstraints x="390" y="510" width="130" height="120"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Mongolian Baiti" size="24" style="0"/>
+          <Font name="Tahoma" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -219,7 +255,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="790" y="690" width="-1" height="-1"/>
+=======
           <AbsoluteConstraints x="420" y="450" width="-1" height="-1"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
@@ -242,14 +282,18 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="221" y="751" width="220" height="220"/>
+=======
           <AbsoluteConstraints x="150" y="510" width="120" height="130"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Mongolian Baiti" size="24" style="0"/>
+          <Font name="Tahoma" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -258,12 +302,28 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< HEAD
+          <AbsoluteConstraints x="240" y="680" width="200" height="50"/>
+=======
           <AbsoluteConstraints x="170" y="450" width="-1" height="-1"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+<<<<<<< HEAD
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="36" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/gui_final/food-1932466_1920.jpg"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="-9" y="5" width="1950" height="1070"/>
+=======
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/gui_final/rsz_11.png"/>
         </Property>
@@ -284,6 +344,7 @@
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="0" width="1720" height="980"/>
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
         </Constraint>
       </Constraints>
     </Component>

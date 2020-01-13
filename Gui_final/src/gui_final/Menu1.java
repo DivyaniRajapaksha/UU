@@ -5,6 +5,8 @@
  */
 package gui_final;
 
+import java.awt.Toolkit;
+
 
 
 /**
@@ -20,6 +22,16 @@ public class Menu1 extends javax.swing.JFrame {
         initComponents();
         //this.setResizable(false);
         setTitle("Cafe de` Pablo");
+               setAlwaysOnTop(true);
+        setResizable(false);
+        setVisible(true);
+        Toolkit tk=Toolkit.getDefaultToolkit();
+        
+        int x=(int) tk.getScreenSize().getWidth();
+        int y=(int) tk.getScreenSize().getHeight();
+        
+        
+        setSize(x,y);
     }
     
     public void close(){
@@ -36,31 +48,29 @@ public class Menu1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton10 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        Seafood = new javax.swing.JButton();
-        Appertizers = new javax.swing.JButton();
-        Chicken = new javax.swing.JButton();
         Vege = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
         Burger = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
         Milk = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
         Coffee = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        Chicken = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        Seafood = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
         Soups = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        Appertizers = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         menu_home = new javax.swing.JButton();
         menu_back = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/back-button.png"))); // NOI18N
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -71,234 +81,135 @@ public class Menu1 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cafe de` Pablo");
-
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
-        jPanel2.setPreferredSize(new java.awt.Dimension(1298, 710));
-
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/menu.png"))); // NOI18N
-
-        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 51), 2));
-
-        Seafood.setBackground(new java.awt.Color(0, 0, 0));
-        Seafood.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rsz_seafood.png"))); // NOI18N
-        Seafood.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SeafoodActionPerformed(evt);
-            }
-        });
-
-        Appertizers.setBackground(new java.awt.Color(0, 0, 0));
-        Appertizers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rsz_appetizers.png"))); // NOI18N
-        Appertizers.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AppertizersActionPerformed(evt);
-            }
-        });
-
-        Chicken.setBackground(new java.awt.Color(0, 0, 0));
-        Chicken.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rsz_chicken.png"))); // NOI18N
-        Chicken.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ChickenActionPerformed(evt);
-            }
-        });
+        getContentPane().setLayout(null);
 
         Vege.setBackground(new java.awt.Color(0, 0, 0));
-        Vege.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rsz_vege.png"))); // NOI18N
+        Vege.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/7878bf6527144ba19488447c7b4759a1.png"))); // NOI18N
         Vege.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VegeActionPerformed(evt);
             }
         });
+        getContentPane().add(Vege);
+        Vege.setBounds(110, 740, 290, 230);
+
+        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel6.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("VEGETARIAN");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(110, 700, 164, 29);
 
         Burger.setBackground(new java.awt.Color(0, 0, 0));
-        Burger.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rsz_burger.png"))); // NOI18N
+        Burger.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/18COOKING-MCBITTYBEANBURGERS2-articleLarge.png"))); // NOI18N
         Burger.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BurgerActionPerformed(evt);
             }
         });
+        getContentPane().add(Burger);
+        Burger.setBounds(520, 740, 290, 230);
+
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("BURGERS");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(660, 670, 116, 29);
 
         Milk.setBackground(new java.awt.Color(0, 0, 0));
-        Milk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rsz_milkshakes.png"))); // NOI18N
+        Milk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/1371609102889.png"))); // NOI18N
         Milk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MilkActionPerformed(evt);
             }
         });
+        getContentPane().add(Milk);
+        Milk.setBounds(1020, 750, 320, 220);
+
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel8.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("MILK SHAKES");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(1121, 606, 170, 29);
 
         Coffee.setBackground(new java.awt.Color(0, 0, 0));
-        Coffee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rsz_coffe.png"))); // NOI18N
+        Coffee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/coffe.png"))); // NOI18N
         Coffee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CoffeeActionPerformed(evt);
             }
         });
+        getContentPane().add(Coffee);
+        Coffee.setBounds(1500, 750, 310, 220);
+
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel9.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("COFFEE");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(1630, 640, 95, 29);
+
+        Chicken.setBackground(new java.awt.Color(0, 0, 0));
+        Chicken.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/baked-lemon-chicken-6.png"))); // NOI18N
+        Chicken.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChickenActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Chicken);
+        Chicken.setBounds(510, 370, 310, 210);
+
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("CHICKEN");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(666, 320, 113, 29);
+
+        Seafood.setBackground(new java.awt.Color(0, 0, 0));
+        Seafood.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/Fotolia_27246788_Subscription_XL.png"))); // NOI18N
+        Seafood.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SeafoodActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Seafood);
+        Seafood.setBounds(1500, 367, 310, 203);
+
+        jLabel4.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("SOUPS");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(1161, 320, 78, 29);
 
         Soups.setBackground(new java.awt.Color(0, 0, 0));
-        Soups.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rsz_soup-7.png"))); // NOI18N
+        Soups.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/vegetable-soup-7.png"))); // NOI18N
         Soups.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SoupsActionPerformed(evt);
             }
         });
+        getContentPane().add(Soups);
+        Soups.setBounds(1010, 370, 330, 210);
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("APPERTIZERS");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(160, 320, 167, 29);
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("SOUPS");
-
-        jLabel4.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("SEAFOOD");
-
-        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("CHICKEN");
-
-        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel6.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("VEGETARIAN");
-
-        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("BURGERS");
-
-        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel8.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("MILK SHAKES");
-
-        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel9.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("COFFEE");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(jLabel2)
-                .addGap(229, 229, 229)
-                .addComponent(jLabel3)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Vege, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Appertizers, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(164, 164, 164)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Soups, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Burger, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(170, 170, 170))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel7)
-                        .addGap(200, 200, 200)))
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Milk, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Seafood, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(177, 177, 177)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Chicken, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Coffee, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(0, 32, Short.MAX_VALUE)
-                        .addComponent(jLabel4)
-                        .addGap(244, 244, 244)
-                        .addComponent(jLabel5)
-                        .addGap(85, 85, 85))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel9)
-                        .addGap(96, 96, 96))))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Seafood, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Chicken, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Appertizers, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Soups, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel7)
-                        .addComponent(jLabel6))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel9)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Burger, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Milk, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Coffee, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Vege, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(33, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(558, 558, 558)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(28, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
-        );
+        Appertizers.setBackground(new java.awt.Color(0, 0, 0));
+        Appertizers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/baked prosciutto & brie with apple butter.png"))); // NOI18N
+        Appertizers.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AppertizersActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Appertizers);
+        Appertizers.setBounds(110, 370, 290, 220);
 
         jPanel3.setBackground(new java.awt.Color(132, 132, 130));
 
@@ -340,9 +251,9 @@ public class Menu1 extends javax.swing.JFrame {
                 .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(menu_home, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1046, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1692, Short.MAX_VALUE)
                 .addComponent(jLabel10)
-                .addGap(32, 32, 32))
+                .addGap(86, 86, 86))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -356,36 +267,24 @@ public class Menu1 extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1269, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 601, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
-        );
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(0, 0, 1975, 52);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        jLabel11.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("SEAFOOD");
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(1600, 310, 116, 29);
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/menu.png"))); // NOI18N
+        getContentPane().add(jLabel12);
+        jLabel12.setBounds(870, 110, 147, 155);
+
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/k.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, -200, 2200, 1410);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -450,12 +349,9 @@ public class Menu1 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_SoupsActionPerformed
 
-    private void menu_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_homeActionPerformed
-        NewJFrame s= new NewJFrame();
-        s.setVisible(true);
-
-        dispose();
-    }//GEN-LAST:event_menu_homeActionPerformed
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
 
     private void menu_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_backActionPerformed
         NewJFrame s= new NewJFrame();
@@ -464,9 +360,12 @@ public class Menu1 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_menu_backActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    private void menu_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_homeActionPerformed
+        NewJFrame s= new NewJFrame();
+        s.setVisible(true);
+
+        dispose();
+    }//GEN-LAST:event_menu_homeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -517,18 +416,16 @@ public class Menu1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton13;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JButton menu_back;
     private javax.swing.JButton menu_home;
     // End of variables declaration//GEN-END:variables

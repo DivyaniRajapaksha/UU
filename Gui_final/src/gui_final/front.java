@@ -19,7 +19,7 @@ public class front extends javax.swing.JFrame {
     public front() {
         initComponents();
         setAlwaysOnTop(true);
-        //setResizable(false);
+        setResizable(false);
         setVisible(true);
         Toolkit tk=Toolkit.getDefaultToolkit();
         
@@ -52,16 +52,23 @@ public class front extends javax.swing.JFrame {
         feedback = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+<<<<<<< HEAD
+=======
         jLabel8 = new javax.swing.JLabel();
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Menu");
         getContentPane().add(jLabel2);
+<<<<<<< HEAD
+        jLabel2.setBounds(290, 320, 100, 40);
+=======
         jLabel2.setBounds(180, 210, 56, 29);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
         menu.setBackground(new java.awt.Color(102, 102, 102));
         menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/menu.png"))); // NOI18N
@@ -73,7 +80,11 @@ public class front extends javax.swing.JFrame {
             }
         });
         getContentPane().add(menu);
+<<<<<<< HEAD
+        menu.setBounds(220, 370, 230, 220);
+=======
         menu.setBounds(150, 260, 120, 110);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
         jButton1.setBackground(new java.awt.Color(102, 102, 102));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/shopping-cart.png"))); // NOI18N
@@ -84,19 +95,31 @@ public class front extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
+<<<<<<< HEAD
+        jButton1.setBounds(700, 370, 240, 220);
+=======
         jButton1.setBounds(400, 260, 110, 110);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
-        jLabel3.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Cart");
         getContentPane().add(jLabel3);
+<<<<<<< HEAD
+        jLabel3.setBounds(800, 320, 77, 44);
+=======
         jLabel3.setBounds(430, 200, 42, 29);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
-        jLabel4.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Rate Us");
         getContentPane().add(jLabel4);
+<<<<<<< HEAD
+        jLabel4.setBounds(1290, 310, 141, 44);
+=======
         jLabel4.setBounds(690, 200, 77, 29);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
         chef.setBackground(new java.awt.Color(102, 102, 102));
         chef.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/chef.png"))); // NOI18N
@@ -107,13 +130,21 @@ public class front extends javax.swing.JFrame {
             }
         });
         getContentPane().add(chef);
+<<<<<<< HEAD
+        chef.setBounds(1250, 360, 240, 230);
+=======
         chef.setBounds(680, 260, 110, 110);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
-        jLabel6.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("About");
         getContentPane().add(jLabel6);
+<<<<<<< HEAD
+        jLabel6.setBounds(1350, 700, 108, 44);
+=======
         jLabel6.setBounds(700, 440, 60, 29);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
         contact.setBackground(new java.awt.Color(102, 102, 102));
         contact.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/phone.png"))); // NOI18N
@@ -124,7 +155,11 @@ public class front extends javax.swing.JFrame {
             }
         });
         getContentPane().add(contact);
+<<<<<<< HEAD
+        contact.setBounds(1260, 750, 250, 220);
+=======
         contact.setBounds(680, 510, 120, 120);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
         about.setBackground(new java.awt.Color(102, 102, 102));
         about.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/admin.png"))); // NOI18N
@@ -135,13 +170,21 @@ public class front extends javax.swing.JFrame {
             }
         });
         getContentPane().add(about);
+<<<<<<< HEAD
+        about.setBounds(690, 750, 260, 220);
+=======
         about.setBounds(390, 510, 130, 120);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
-        jLabel7.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Contact");
         getContentPane().add(jLabel7);
+<<<<<<< HEAD
+        jLabel7.setBounds(790, 690, 140, 44);
+=======
         jLabel7.setBounds(420, 450, 76, 29);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
         feedback.setBackground(new java.awt.Color(102, 102, 102));
         feedback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rating.png"))); // NOI18N
@@ -152,12 +195,24 @@ public class front extends javax.swing.JFrame {
             }
         });
         getContentPane().add(feedback);
+<<<<<<< HEAD
+        feedback.setBounds(221, 751, 220, 220);
+=======
         feedback.setBounds(150, 510, 120, 130);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
-        jLabel5.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Feedback");
         getContentPane().add(jLabel5);
+<<<<<<< HEAD
+        jLabel5.setBounds(240, 680, 200, 50);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/food-1932466_1920.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-9, 5, 1950, 1070);
+=======
         jLabel5.setBounds(170, 450, 93, 29);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/rsz_11.png"))); // NOI18N
@@ -168,6 +223,7 @@ public class front extends javax.swing.JFrame {
         jLabel8.setText("jLabel8");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(0, 0, 1720, 980);
+>>>>>>> ee676ee79e9843b7255b75b53c04f1f42e620d48
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
