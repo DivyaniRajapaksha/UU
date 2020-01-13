@@ -6,12 +6,18 @@
 package gui_final;
 
 import ViewClass.DBConnection;
+import ViewClass.Employee;
+import ViewClass.FoodItem;
 import ViewClass.FoodTable;
 import ViewClass.loyalty;
+import static gui_final.FoodTableView.all;
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
 /**
@@ -19,7 +25,7 @@ import javax.swing.table.TableModel;
  * @author cookie
  */
 public class loyaltyadminview extends javax.swing.JFrame {
-
+    static ArrayList<loyalty> all;
     /**
      * Creates new form loyaltyadminview
      */
@@ -28,39 +34,36 @@ public class loyaltyadminview extends javax.swing.JFrame {
         viewloyalty();
     }
     
-    public void viewloyalty(){
-        loyalty lc1 = new loyalty();
-        DBConnection db=new DBConnection();
-        String[] columnName={"fn","ln","ml","mb"};
-        ArrayList<loyalty> all;
+     public void viewloyalty(){
        
-        try {
-            all=db.viewloyaltycus();
-        
-             Object[][] rowData=new Object[all.size()][4];
+       
              
-             Iterator<loyalty > itr = all.iterator();
-             //DefaultTableModel model=(DefaultTableModel) jTable1.getModel();
-             //Object rowData[]=new Object[100];
-             for(int i=0;i<all.size();i++){
-                 rowData[i][0]=all.get(i).getfn();
-                 rowData[i][1]=all.get(i).getln();
-                 rowData[i][2]=all.get(i).getml();
-                 rowData[i][3]=all.get(i).getmb();
+        try {
+            DBConnection db=new DBConnection();
+            ArrayList<loyalty> arr;
+            arr = db.viewloyaltycus();
+            Object rowData[]=new Object[100];
+            DefaultTableModel model=(DefaultTableModel) jTable1.getModel();
+            Iterator<loyalty> itr = arr.iterator();
+            while (itr.hasNext()) {
                 
-                 
-                 
-                 
-             }
-             FoodTable ft=new FoodTable(rowData,columnName);
-             jTable1.setModel(ft);
-             jTable1.setRowHeight(120);
-             jTable1.getColumnModel().getColumn(4).setPreferredWidth(150);
+                loyalty i2=itr.next();
+                
+                {
+                    rowData[0]=i2.getfn();
+                    rowData[1]=i2.getln();
+                    rowData[2]=i2.getml();
+                    rowData[3]=i2.getmb();
+                    rowData[4]=i2.getpw();
+                   
+                    model.addRow(rowData);
+                } 
+            }
         } catch (Exception ex) {
-            Logger.getLogger(FoodTableView.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ViewEmployee.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }   
-
+       
+     }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
