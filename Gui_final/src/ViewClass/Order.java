@@ -27,6 +27,10 @@ public class Order {
         this.time=time;
         this.totPrice=totPrice;
     }
+    public Order(int oId,double totPrice){
+        this.oId=oId;
+        this.totPrice=totPrice;
+    }
 
     /**
      * @return the oId

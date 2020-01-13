@@ -28,6 +28,7 @@ import javax.swing.table.DefaultTableModel;
 public class CartGUI extends javax.swing.JFrame {
     static int oId=0;
     private static ArrayList<FoodOrder> al1=new ArrayList<FoodOrder>();
+    static double total=0;
     /**
      * Creates new form CartGUI
      */
@@ -47,11 +48,11 @@ public class CartGUI extends javax.swing.JFrame {
 
     public void addRow(){
         Cart c1=new Cart();
-        final ArrayList<Cart> al=c1.retrieveCart();
+         ArrayList<Cart> al=c1.retrieveCart();
         DefaultTableModel model=(DefaultTableModel) jTable1.getModel();
         Object rowData[]=new Object[100];
         Iterator itr=al.iterator();  
-        double total=0;
+        
         oId++;
             while(itr.hasNext()){ 
                   //System.out.println("called");
@@ -71,7 +72,7 @@ public class CartGUI extends javax.swing.JFrame {
             
             LocalTime time = LocalTime.now();
             LocalDate date = LocalDate.now();  
-            Order o1=new Order(oId,date,time,total);
+            Order o1=new Order(oId,total);
             DBConnection db=new DBConnection();
         try {
             db.addOrder(al1, o1);
